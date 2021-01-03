@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"name": "legrandredd.github.io",
+			"path": "..\\legrandredd Github\\legrandredd.github.io"
+		},
+		{
+			"name": "JSON_start",
+			"path": "..\\WDD230\\JSON_start"
+		},
+		{
+			"name": "start",
+			"path": "..\\start"
+		},
+		{
+			"path": "..\\..\\..\\Downloads\\start_here"
+		},
+		{
+			"name": "legrandredd1.github.io",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "legrandredd.github.io"
+	}
+}
