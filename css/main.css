@@ -7,7 +7,7 @@ header img {
         0 6px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
-header, footer {
+header, main, footer {
     background-color: rgb(2, 77, 2);
     border-radius: 10px;
     text-align: center;
@@ -16,9 +16,6 @@ header, footer {
     color: white;
 }
 
-h1 {
-    text-align: center;
-}
 
 main {
     display: block;
