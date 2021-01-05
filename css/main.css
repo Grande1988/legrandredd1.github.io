@@ -16,8 +16,10 @@ header, footer {
     color: white;
 }
 
-h1 {
+h2 {
+    font-size: 1.5em;
     text-align: center;
+    border-bottom: 1px solid black;
 }
 
 main {
