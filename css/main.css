@@ -16,6 +16,10 @@ header, footer {
     color: white;
 }
 
+h1 {
+    text-align: center;
+}
+
 main {
     display: block;
 }
