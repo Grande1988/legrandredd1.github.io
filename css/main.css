@@ -34,6 +34,14 @@ section {
     margin-top: -100px;
 }
 
+body {
+    background-color: #c0f5c3;
+    color: #047526;
+    max-width: 950px;
+    margin: 0 auto;
+    font-family: "Myriad Pro", Helvetica, sans-serif;
+  }
+  
 .clearfix:after {
     content: "";
     display: table;
