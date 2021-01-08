@@ -13,6 +13,11 @@ header, footer {
     color: white;
 }
 
+
+footer a:active, footer a:visited, footer a:link {
+    color: yellow;
+}
+
 h2 {
     font-size: 1.5em;
     text-align: center;
