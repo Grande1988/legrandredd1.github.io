@@ -3,6 +3,7 @@ header img {
     margin-right:30px;
     margin-top: -80px;
     box-shadow: 5px 5px 6px;
+    border-radius: 5px;
 }
 
 header, footer {
@@ -16,7 +17,7 @@ header, footer {
 
 
 footer a:active, footer a:visited, footer a:link {
-    color: white;
+    color: blue;
 }
 
 h2 {
