@@ -1,4 +1,5 @@
-now= new Date();
-const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-date= now.getDate() + ", "+ now.getMonth() +" "+ now.getFullYear();
-document.getElementById("current-date").innerText= now.toLocaleDateString("en-GB", options );
+//provide information on document last update
+document.getElementById('lastupdated').textContent = document.lastModified;
+
+//provide current year
+document.getElementById('currentyear').textContent = new Date().getFullYear();
