@@ -2,9 +2,8 @@ header img {
     float: right;
     margin-right:30px;
     margin-top: -80px;
-    box-shadow:
-        0, 4px 10px 0 rgba(0, 0, 0, 0.2)
-        0 6px 50px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 6px;
+    border-radius: 5px;
 }
 
 header, footer {
@@ -13,7 +12,17 @@ header, footer {
     text-align: center;
     padding: 20px;
     font-family: Times;
-    color: black;
+    color: white;
+}
+
+
+footer a:active, footer a:visited, footer a:link {
+    color: blue;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
 }
 
 main {
@@ -29,6 +38,14 @@ section {
     margin-top: -100px;
 }
 
+body {
+    background-color: #c0f5c3;
+    color: #047526;
+    max-width: 950px;
+    margin: 0 auto;
+    font-family: "Myriad Pro", Helvetica, sans-serif;
+  }
+  
 .clearfix:after {
     content: "";
     display: table;
