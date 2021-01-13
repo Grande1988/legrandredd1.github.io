@@ -19,7 +19,7 @@ body {
     border-radius: 9px;
   }
   header, footer {
-    background-color:  #A4778B;
+    background-color:  #047526;
     color: white;
     display: flex;
     flex-flow: column;
@@ -52,7 +52,7 @@ body {
     margin: .5em;
     border: 1px solid #bbb;
     padding: .25em;
-    background-color:  #A4778B;
+    background-color:  #047526;
     color: black;
     border-radius: 9px;
     justify-content: center;
