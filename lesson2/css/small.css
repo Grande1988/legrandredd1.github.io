@@ -46,7 +46,7 @@ body {
   a:hover {color: blue;}
   h1 {
     font-size: 2rem;
-    font-family: "Pacifico",  sans-serif;
+    font-family: "Quicksand",  sans-serif;
   }
   main article {
     margin: .5em;
@@ -56,6 +56,7 @@ body {
     color: black;
     border-radius: 9px;
     justify-content: center;
+    text-align: center;
   }
   main picture img {
       width: 100%;
