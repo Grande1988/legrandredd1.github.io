@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Stop Weather Site Plan</title>
+    <link rel="shortcut icon" href="C:\Users\A00018412\Desktop\legrandredd1.github.io\lesson3\favicon (5).ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -13,9 +14,12 @@
         <br>
         <h2>Site Plan</h2>
     </header>
-    <nav>
-        <ul class="menu first">
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">☰</button>
+        <ul id="primaryNav" class="hide">
             <li class="active">
+                <a href="index.html">Home</a>
+            </li>
                 <a href="target-audience.html">Target Audience</a>
             </li>
             <li>
@@ -28,13 +32,14 @@
     </nav>
     <main>
         <h3>Site Purpose</h3>
-
+        <p></p>
+        <h3></h3>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
             target="_blank">BYU-I Online Learning</a></p>
             <p>Last Updated: <span id="lastupdated"></span></p>
       </footer>
-      <script src="js/last-modified.js"></script>
+      <script src="js/currentDate.js"></script>
 </body>
 </html>
