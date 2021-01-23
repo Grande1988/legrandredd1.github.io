@@ -20,7 +20,7 @@ body {
   }
   header, footer {
     background-color:  #047526;
-    color: white;
+    color: #047526;
     display: flex;
     flex-flow: column;
     align-items: center;
