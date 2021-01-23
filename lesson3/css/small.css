@@ -112,4 +112,10 @@ body {
   .responsive li {
     display: block;
   }
+
+  ul li {
+    display: inline;
+    padding-right: 100px;
+    padding-left: 50px;
+  }
   
