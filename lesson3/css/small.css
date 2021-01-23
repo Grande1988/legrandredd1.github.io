@@ -42,7 +42,7 @@ body {
     border-radius: 9px;
   }
   a {	color: white; }
-  a:visited {color: white;}
+  a:visited {color: purple;}
   a:hover {color: blue;}
   h1 {
     font-size: 2rem;
