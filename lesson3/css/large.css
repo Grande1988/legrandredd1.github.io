@@ -23,3 +23,10 @@ html {
 .active {
     background-color: #047526;
 }
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align align-self: center;
+    align-content: space-between;
+}
