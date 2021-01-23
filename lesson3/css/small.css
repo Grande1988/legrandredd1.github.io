@@ -52,7 +52,7 @@ body {
     margin: .5em;
     border: 1px solid #bbb;
     padding: .25em;
-    background-color:  #48BEFF;
+    background-color:  #3dfaff;
     color: black;
     border-radius: 9px;
     justify-content: center;
@@ -81,7 +81,7 @@ body {
   nav {
     margin: 0 auto;
     max-width: 760px;
-    background-color: #48BEFF;
+    background-color: white;
   }
   .navigation {
     list-style: none;
