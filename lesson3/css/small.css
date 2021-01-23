@@ -64,8 +64,6 @@ body {
   main picture {
     display: block;
     margin: .5rem auto;
-    border-radius: 9px;
-    background: black;
     padding: 1em;
   }
   footer {
