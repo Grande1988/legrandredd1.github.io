@@ -25,7 +25,6 @@ html {
 }
 nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-self: center;
     align-content: space-between;
