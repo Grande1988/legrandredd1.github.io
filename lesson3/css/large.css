@@ -10,5 +10,13 @@
           border: 1px solid #bbb;
           border-radius: 9px;
       }
+   
   }
-  
+  section {
+    margin-top: 25px;
+    border-radius: 3px;
+    width: 100%;
+}
+html {
+    margin: 0 auto;
+}
