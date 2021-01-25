@@ -1,0 +1,53 @@
+header img {
+    float: right;
+    margin-right:30px;
+    margin-top: -80px;
+    box-shadow: 5px 5px 6px;
+    border-radius: 5px;
+}
+
+header, footer {
+    background-color: rgb(2, 77, 2);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    font-family: Times;
+    color: #c0f5c3;
+}
+
+
+footer a:active, footer a:visited, footer a:link {
+    color: blue;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+main {
+    display: block;
+}
+
+section {
+    display: block;
+}
+ 
+.mainpicture {
+    float: right;
+    margin-top: -100px;
+}
+
+body {
+    background-color: #3d7068;
+    color: #3dfaff;
+    max-width: 95%;
+    margin: 0 auto;
+    font-family: "Myriad Pro", Helvetica, sans-serif;
+  }
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

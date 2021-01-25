@@ -1,0 +1,31 @@
+@media only screen and (min-width: 60em) {
+    main {
+         display: block;
+      }
+      main picture {
+          display: block;
+      }
+      main picture img {
+          width: 100%;
+          border: 1px solid #bbb;
+          border-radius: 9px;
+      }
+   
+  }
+  section {
+    margin-top: 25px;
+    border-radius: 3px;
+    width: 100%;
+}
+html {
+    margin: 0 auto;
+}
+.active {
+    background-color: #48BeFF;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: space-between;
+}
