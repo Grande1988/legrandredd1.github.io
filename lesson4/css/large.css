@@ -6,7 +6,7 @@
           display: block;
       }
       main picture img {
-          width: 100%;
+          width: 25%;
           border: 1px solid #bbb;
           border-radius: 9px;
       }
