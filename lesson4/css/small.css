@@ -17,6 +17,11 @@ body {
     border: 1px solid #bbb;
     border-radius: 9px;
   }
+  .logo-box {
+    height: 90px;
+    width: auto;
+    padding-right: 10px;
+  }
   header, footer {
     background-color:  #48BEFF;
     color: #14453D;
