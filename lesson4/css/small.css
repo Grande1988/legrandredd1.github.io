@@ -91,7 +91,7 @@ body {
   
   nav {
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 760px;
     background-color: #3dfaff;
   }
   .navigation {
