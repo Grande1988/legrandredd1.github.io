@@ -31,6 +31,10 @@ body {
     padding: .5em;
     border-radius: 9px;
   }
+  header img {
+    background-color: #48BEFF;
+    border-radius: .3em;
+  }
   .item-foot {
     margin: .5em;
     padding:.5em;
