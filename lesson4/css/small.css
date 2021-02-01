@@ -18,10 +18,9 @@ body {
     border-radius: 9px;
   }
   .logo-box {
-    height: 90px;
-    width: auto;
-    padding-right: 10px;
-  }
+    height: 11em;
+    width: 11em;
+    }
   header, footer {
     background-color:  #48BEFF;
     color: #14453D;
@@ -31,6 +30,10 @@ body {
     justify-content: center;
     padding: .5em;
     border-radius: 9px;
+  }
+  header img {
+    background-color: #48BEFF;
+    border-radius: .3em;
   }
   .item-foot {
     margin: .5em;

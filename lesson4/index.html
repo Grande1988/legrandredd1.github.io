@@ -13,11 +13,13 @@
 </head>
 <body>
     <header>
-        <img class="logo-box" src="images/logo.png" alt="One Stop Weather Logo">
+        <img src="images/logo.png" alt="One Stop Weather Logo">
         <h1>One Stop Weather</h1>
+        <h2>One Stop for all your East Idaho Weather</h2>
     </header>
-    <nav>
-        <ul>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mobileMenu" class="hide"> <!--class="navicageion responsive"-->
             <li class="active">
                 <a href="index.html">Home</a>
             </li>
@@ -38,7 +40,7 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main class="container">
         <section>
         <h3>Preston</h3>
         <div class="contents">Hero w/ weather summary</div>
