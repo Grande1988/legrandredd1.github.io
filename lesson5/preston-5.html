@@ -1,25 +1,69 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="author" content="LeGrand Redd">
-    <meta name="description" content="Weather Site Project Planning Doc">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Stop Weather Site Plan</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/lesson5/css/small.css">
-    <link rel="stylesheet" href="/lesson5/css/medium.css">
-    <link rel="stylesheet" href="/lesson5/css/large.css">
-    <link rel="stylesheet" href="/lesson5/css/hamburger.css">
-    <link rel="stylesheet" href="/lesson5/css/footer.css">
-    <title>One Stop Weather | LeGrand Redd</title>
-
-  </head>
-  
-  <body>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
     <header>
-      <img class="logo-box" src="lesson5/images/logo.png">
+        <img src="images/logo.png" alt="One Stop Weather Logo">
+        <h1>One Stop Weather</h1>
+        <h2>One Stop for all your East Idaho Weather</h2>
     </header>
-  </body>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mobileMenu" class="hide"> <!--class="navigation responsive"-->
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="">Preston</a>
+            </li>
+            <li>
+                <a href="">Soda Springs</a>
+            </li>
+            <li>
+                <a href="">Fish Haven</a>
+            </li>
+            <li>
+                <a href="">Storm Center</a>
+            </li>
+            <li>
+                <a href="">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section>
+        <h3>Preston</h3>
+        <div class="contents">Hero w/ weather summary</div>
+        </section>
+        <section>
+        <div class="contents">5 day forecast</div>
+    </section>
+    <section>
+        <div class="contents">Articles</div>
+    </section>
+    <section>
+        <div class="contents">Contact Information</div>
+    </section>        
+        <br>
+       
+    </main>
+    <footer>
+        <div>
+        <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
+            target="_blank">BYU-I Online Learning</a></p>
+        </div>
+            <p>Last Updated: <span id="lastupdated"></span></p>
+      </footer>
+      <script src="js/currentDate.js"></script>
+</body>
+</html>
