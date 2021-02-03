@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Stop Weather Site Plan</title>
-
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/small.css">
@@ -13,36 +13,55 @@
 </head>
 <body>
     <header>
+        <img src="images/logo.png" alt="One Stop Weather Logo">
         <h1>One Stop Weather</h1>
-        <br>
-        <h2>Color Scheme</h2>
+        <h2>One Stop for all your East Idaho Weather</h2>
     </header>
-    <nav>
-        <ul>
-            <li >
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mobileMenu" class="hide"> <!--class="navigation responsive"-->
+            <li class="active">
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="target-audience.html">Target Audience</a>
-            </li>
-            <li class="active">
-                <a href="color-scheme.html">Color Scheme</a>
+                <a href="">Preston</a>
             </li>
             <li>
-                <a href="typography.html">Typography</a>
+                <a href="">Soda Springs</a>
+            </li>
+            <li>
+                <a href="">Fish Haven</a>
+            </li>
+            <li>
+                <a href="">Storm Center</a>
+            </li>
+            <li>
+                <a href="">Gallery</a>
             </li>
         </ul>
     </nav>
-    <main>
+    <main class="container">
         <section>
-        <h3>Color Scheme</h3>
-        <img src="images/wdd230_website.png" width="1000" alt="One Stop Weather color Scheme">
+        <h3>Preston</h3>
+        <div class="contents"><h3>Hero w/ weather summary</h3></div>
         </section>
+        <section>
+        <div class="contents">5 day forecast</div>
+    </section>
+    <section>
+        <div class="contents">Articles</div>
+    </section>
+    <section>
+        <div class="contents">Contact Information</div>
+    </section>        
         <br>
+       
     </main>
     <footer>
+        <div>
         <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
             target="_blank">BYU-I Online Learning</a></p>
+        </div>
             <p>Last Updated: <span id="lastupdated"></span></p>
       </footer>
       <script src="js/currentDate.js"></script>
