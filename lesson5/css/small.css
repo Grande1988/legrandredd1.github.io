@@ -14,8 +14,8 @@ body {
   }
   main picture img {
     width: 100%;
-    border: 1px solid #bbb;
-    border-radius: 9px;
+    border: 2px solid black;
+    display: block;
   }
   .logo-box {
     height: 11em;
