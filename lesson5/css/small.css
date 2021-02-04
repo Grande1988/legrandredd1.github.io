@@ -98,6 +98,12 @@ body {
     max-width: 95%;
     background-color: #3dfaff;
   }
+  nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+  }
   .navigation {
     list-style: none;
     padding: 0;
