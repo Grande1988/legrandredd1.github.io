@@ -37,7 +37,7 @@ nav ul {
 }
 .summary {
     position: absolute;
-    background-color: rgba(0,0,0.8);
+    background-color: #3dfaff;
     max-width: 25%;
     top: 40%;
     left: 15%;
