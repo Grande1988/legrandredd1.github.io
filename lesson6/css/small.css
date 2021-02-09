@@ -139,6 +139,16 @@ body {
     border-top: 1px solid rgba(0,0,0.3);
 
   }
+  .hero{
+    position: relative;
+  }
+  .heroImage{
+    display: block;
+    width: 100%;
+  }
+  .heroImage img{
+    width: 100%;
+  }
   
   /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
     <ul class="navigation responsive">

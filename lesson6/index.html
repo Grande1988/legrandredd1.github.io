@@ -2,11 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>One Stop Weather</title>
 </head>
 <body>
-    
+    <div id="message" class="">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</p>
+    </div>
+    <section class="sticky">
+        <header>
+            <picture>
+                <img src="images/logo.png" alt="This image is the logo for Weather Go">
+            </picture>
+            <section class="heading">
+                <h1>One Stop Weather</h1>
+                <h2 class="motto">One Stop for all your East Idaho Weather</h2>
+            </section>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </header>
+
+        <nav>
+            <!-- <button onclick="toggleMenu()">&#9776;</button> -->
+            <ul id="primaryNav" class="hide">
+                <!-- <li class="ham"><a href="#">Menu</a></li> -->
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+        
+        </header>
+    </section>
 </body>
 </html>
