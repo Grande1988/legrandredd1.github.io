@@ -1,0 +1,46 @@
+@media only screen and (min-width: 60em) {
+    main {
+         display: block;
+      }
+      main picture {
+          display: block;
+      }
+      main picture img {
+          width: 10%;
+          border: 1px solid #bbb;
+          border-radius: 9px;
+      }
+   
+  }
+  section {
+    margin-top: 25px;
+    border-radius: 3px;
+    width: 100%;
+}
+html {
+    margin: 0 auto;
+}
+.active {
+    background-color: #48BeFF;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: space-between;
+}
+
+.herodiv img {
+    display: block;
+    width: 100%;
+    border: solid 2px black;
+}
+.summary {
+    position: absolute;
+    background-color: #3dfaff;
+    max-width: 25%;
+    top: 40%;
+    left: 15%;
+    padding: 5px;
+    color: black;
+}
