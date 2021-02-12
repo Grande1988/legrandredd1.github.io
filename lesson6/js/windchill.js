@@ -1,27 +1,17 @@
-function isWindChill(){
-   let temperature = parseInt(document.querySelector("#temperature").textContent);
-   let windSpeed = parseInt(document.querySelector("#windSpeed").textContent);
+// console.log(jsObject); // uncomment "console.log(jsObject);"" to check within console
 
-   if(temperature <= 50 && windSpeed >= 3.0){
-       windChill()
-   }
-   else{
-       document.querySelector("#windChill").innerHTML = "N/A"
-   }
+// Pull In "current-temp" and "windspeed" innerHTML span id elements
+let t = document.getElementById("current-temp").innerHTML;
+let s = document.getElementById("windspeed").innerHTML;
+let wc = "N/A";
 
-}
-
-function windChill(){
-// gets the content inside of the spans for temperature and wind speed
-let temperature = document.querySelector("#temperature").textContent;
-let windSpeed = document.querySelector("#windSpeed").textContent;
-
-wind_chill = 35.74 + (0.6215 * temperature) - (35.75 * (Math.pow(windSpeed, 0.16))) + (0.4275 *(temperature * (Math.pow(windSpeed, 0.16))));
-wind_chill = Math.round(wind_chill) + "&#176;F";
+// if to set temp of 50 or less and windspeed greater than 3 and calculate wind chill
+if (t <= 50 && s >= 3.0) {
+    let calc = (35.74 + (0.6215 * t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275 * (t * (Math.pow(s, 0.16))));
+    wc = Math.round(calc) + "&#176; F";
+} 
+// Inject wc var into windchill innerHTML
+document.getElementById("windchill").innerHTML = wc;
 
 
-return document.querySelector("#windChill").innerHTML = wind_chill;
 
-}
-
-isWindChill();
