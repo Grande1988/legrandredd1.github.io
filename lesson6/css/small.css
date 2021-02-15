@@ -154,6 +154,10 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.3)
 }
 
+.fiveDaysForcast {
+  display: none;
+}
+
 .weathersummary {
   position: absolute;
   top: 2rem;
