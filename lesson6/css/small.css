@@ -1,6 +1,13 @@
 body {
     font-family: "Quicksand", sans-serif;
   }
+  
+  * {
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   header, main, footer {
     max-width: 95%;
     margin: .5em .5em .5em .5em;
@@ -134,7 +141,16 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.3)
 }
 
-  
+.weathersummary {
+  position: absolute;
+  top: 2rem;
+  margin-left: 3rem;
+  background-color: rgba(142, 175, 157, 0.7);
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgb(246 100 25 / 50%);
+  border: 2px solid black;
+}
 
   .hero{
     position: relative;

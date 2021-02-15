@@ -75,4 +75,8 @@
 		display: inline-flex;
 		width: 95%;
 	  }
+
+	  .weathersummary {
+		  margin-left: 3em;
+	  }
 }
