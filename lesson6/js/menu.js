@@ -1,4 +1,4 @@
-function togglemenu() {
-    document.getElementById("mobileMenu").classList.toggle("hide");
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+function toggleMenu() {
+    console.log(document.getElementById("primaryNav").classList);
+    document.getElementById("primaryNav").classList.toggle("hide");
 }
