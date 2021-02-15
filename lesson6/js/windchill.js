@@ -1,17 +1,28 @@
-// console.log(jsObject); // uncomment "console.log(jsObject);"" to check within console
+/* Input: get a temperature from the first text field
+            get a wind speed from the second text field
+ * Processing: call the second function (windChill)
+            store the value returned by windChill in a variable
+ * Output: output the value returned by windChill to the div for the user to see
+ */
 
-// Pull In "current-temp" and "windspeed" innerHTML span id elements
-let t = document.getElementById("current-temp").innerHTML;
-let s = document.getElementById("windspeed").innerHTML;
-let wc = "N/A";
+    
+ 
+function doInputOutput() {
+    let tempF = parseFloat(document.getElementById('highnmb').innerHTML); 
+    let speed = parseFloat(document.getElementById('wndmph').innerHTML); 
+   let wCOutput = windChill(tempF, speed);
+   document.getElementById("outputDiv").innerHTML= wCOutput+"F"+"&deg;";
+}
 
-// if to set temp of 50 or less and windspeed greater than 3 and calculate wind chill
-if (t <= 50 && s >= 3.0) {
-    let calc = (35.74 + (0.6215 * t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275 * (t * (Math.pow(s, 0.16))));
-    wc = Math.round(calc) + "&#176; F";
-} 
-// Inject wc var into windchill innerHTML
-document.getElementById("windchill").innerHTML = wc;
 
+// call the second function (windChill)
+// store the value returned by windChill in a variable
+// output the value returned by windChill to the div for the user to see
+function windChill(T, S) {
+ let wC  =  35.74 + 0.6215*T-35.75*(Math.pow(S, 0.16)) + 0.4275*T*(Math.pow(S, 0.16));
+ let rwC = Math.round(wC);
+
+ return rwC;
+}
 
 
