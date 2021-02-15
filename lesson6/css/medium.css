@@ -53,4 +53,26 @@
 	.fiveDaysContainer div p{
 		font-weight: bold;
 	}
+	/* ---------- nav ---------- */
+  
+    nav ul {
+		overflow: hidden;
+		flex-flow: row nowrap;
+	  }
+	
+	  nav ul li {
+		display: inline-flex;
+		padding: 5px 0px;
+		margin: auto;
+	  }
+	
+	  nav ul li a {
+		padding: 8px 10px;
+		border: none;
+	  }
+	
+	  nav ul.hide {
+		display: inline-flex;
+		width: 95%;
+	  }
 }
