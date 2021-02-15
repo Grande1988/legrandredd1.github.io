@@ -33,12 +33,7 @@ html {
 .active {
     background-color: #48BeFF;
 }
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-content: space-between;
-}
+
 
 .herodiv img {
     display: block;
