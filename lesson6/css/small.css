@@ -101,7 +101,7 @@ body {
     color: rgba(24, 174, 45, 1);
 }
 nav {
-    background-color:  rgba(113, 224, 85);
+    background-color:  #3dfaff;
     font-family: verdana, sans-serif;
     }
 
@@ -123,7 +123,7 @@ nav ul.hide {
     float: right;
     background-color: #ddefff;
     border: none;
-    color: #14dd14;
+    color: #3dfaff;
 }
 
 nav ul li a {
