@@ -1,7 +1,7 @@
 body {
     font-family: "Quicksand", sans-serif;
   }
-  
+
   * {
     moz-box-sizing: border-box;
     webkit-box-sizing: border-box;
@@ -27,6 +27,19 @@ body {
   .logo-box {
     height: 11em;
     width: 11em;
+    }
+    #bannertext.notfriday {
+      display: none;
+    }
+    #bannertext {
+      display: block;
+      background-color: #48BEFF;
+      color: beige;
+      font-family: 'Averia Libre', cursive;
+      font-size: 1em;
+      width: 100%;
+      padding: .5em;
+      text-align: center;
     }
   header, footer {
     background-color:  #48BEFF;

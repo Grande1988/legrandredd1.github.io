@@ -1,5 +1,23 @@
-let today = new Date();
+function satbanner() {
+    let today = new Date();
+     console.log(today.getDay())
+    if(today.getDay() == 5){
+         const bannerhide = document.getElementById('bannertext');
+        {bannerhide.classList.remove('notfriday')}
+   } else {
+    const bannershow = document.getElementById('bannertext');
+    {bannershow.classList.add('notfriday')}
+    }
+}
 
-if(today.getDay() == 6){
-    document.getElementById('day-text').innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."
-};
+// function insertbanner() {
+//     let today = new Date();
+//     console.log(today.getDay())
+//     if(today.getDay() == 5){
+//         const bannerhide = document.getElementById('bannertext');
+//         {bannerhide.classList.remove('notfriday')}
+//     } else {
+//     const bannershow = document.getElementById('bannertext');
+//     {bannershow.classList.add('notfriday')}
+//     }
+// }
