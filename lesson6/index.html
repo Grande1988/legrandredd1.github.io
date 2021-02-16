@@ -13,7 +13,7 @@
 </head>
 <body onload="satbanner(); doInputOutput()">
     <div id="bannertext" class="notfriday">
-        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</p>
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</p>
     </div>
     <section class="sticky">
         <header>
@@ -39,20 +39,23 @@
                 <li><a href="#">Gallery</a></li>
             </ul>
         </nav>
-        <main>
+        <main class="container">
+            <section>
             <h3>Preston, Idaho</h3>       
-            <section class="hero">
+            </section>
+            <div class="herodiv">
                 <picture>
                 <source class="small" srcset="images/wdd230_image_franklin500.jpg" media="(max-width: 480px)">
                 <source class="medium" srcset="images/wdd230_image_franklin800.jpg" media="(max-width: 768px)">
                 <source class="large" srcset="images/wdd230_image_franklin1100.jpg" media="(max-width: 1000px)">
                 <img class="content-1-image" src="images/wdd230_image_franklinOriginal(2).jpg" alt="Mountain Landscape">
                 </picture>
+                <section>
                     <div class="weathersummary">
                         <p>Weather Summary</p>
                         <p>Currently: Sunny</p>
                         <p>High: 75 °F</p> 
-                        <p>Wind Chill: <span id="windChill"></span>°F</p>
+                        <p>Wind Chill: <span id="windchill"></span>°F</p>
                         <p>Humidity: 60%</p>
                         <p>Wind Speed: 5mph</p>
                     </div>
@@ -89,15 +92,11 @@
                 </div>
                  </section>
                  <hr>
-                 <article class="prestonart">
-                     <div class="prestonartimg">
-                         <img src="images/sodasprings.jpg" alt="Soda Springs">
-                     </div>
-                    <h2>History of Preston, Idaho</h2>
+                 <section class="article">
+                     <h2>History of Preston, Idaho</h2>
                    <p>In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, stretching across southeastern Idaho and northeastern Utah. They founded a community in that location and named it Worm Creek, but in 1881 changed it to Preston because leaders of the LDS Church in Salt Lake City objected to the name "Worm Creek" being part of any church congregation's name. The name Preston was suggested by a local member to honor William B. Preston, who at the time was president of the LDS Church's Cache Stake. It was not until the 1880s while William C. Parkinson was serving as the bishop of the Preston LDS Ward that a regular townsite was laid out.
                        <a href="https://en.wikipedia.org/wiki/Preston,_Idaho">Wikipedia</a>
                    </p>
-                 </article>
                  </section>
             </div>
                  <div class="content-2">
