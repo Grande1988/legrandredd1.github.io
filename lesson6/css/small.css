@@ -156,13 +156,14 @@ nav ul li a {
 
 .weathersummary {
   position: absolute;
-  top: 2rem;
-  margin-left: 3rem;
+  top: 1rem;
+  margin-left: 1rem;
   background-color: rgba(142, 175, 157, 0.7);
   padding: 1rem 1rem;
   border-radius: 8px;
   box-shadow: 5px 5px 5px rgb(246 100 25 / 50%);
   border: 2px solid black;
+  font-size: 10px;
 }
 
   .hero{
