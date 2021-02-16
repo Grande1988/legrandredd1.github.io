@@ -8,7 +8,10 @@
   nav ul.hide {
     width: 960px;
   }
-
+  
+  nav button {
+      display: none;
+  }
     main {
          display: block;
       }
