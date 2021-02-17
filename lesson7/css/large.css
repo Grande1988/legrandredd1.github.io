@@ -54,7 +54,7 @@ html {
 }
 .gallery {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gapL 20px: ;
+    column-gap: 20px ;
     row-gap: 25px;
     width: 1100px;
     margin: 0 auto;
