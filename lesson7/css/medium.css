@@ -79,4 +79,21 @@
 	  .weathersummary {
 		  margin-left: 3em;
 	  }
+	  .gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+        /* margin: 0 5vw; */
+    }
+
+    .gallery picture:nth-child(odd){
+        grid-column: 1/3;
+    }
+    .gallery picture:nth-child(even){
+        grid-column: 3/5;
+    }
+    .gallery picture:nth-last-child(1){
+        grid-column: 2/4;   
+    }
+    
 }
