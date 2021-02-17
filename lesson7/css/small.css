@@ -53,6 +53,40 @@ body {
     background-color: #48BEFF;
     border-radius: .3em;
   }
+  .galleryTitle{
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* margin: 0 1vw; */
+    /* max-width: 100%; */
+}
+.gallery picture{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.gallery picture img{
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.gallery picture p{
+    display: none;
+}
+.gallery picture:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
   .item-foot {
     margin: .5em;
     padding:.5em;
