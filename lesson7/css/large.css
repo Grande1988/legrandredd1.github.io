@@ -19,7 +19,7 @@
           display: block;
       }
       main picture img {
-          width: 10%;
+          width: 100%;
           border: 1px solid #bbb;
           border-radius: 9px;
       }
