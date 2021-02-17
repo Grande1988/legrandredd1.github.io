@@ -55,6 +55,12 @@ body {
     background-color: #48BEFF;
     border-radius: .3em;
   }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1vw; 
+    max-width: 100%;
+  }
   .item-foot {
     margin: .5em;
     padding:.5em;
