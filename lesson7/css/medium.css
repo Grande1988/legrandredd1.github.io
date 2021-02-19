@@ -76,6 +76,9 @@
 		width: 95%;
 	  }
 
+	  nav button {
+		  display: none;
+	  }
 	  .weathersummary {
 		  margin-left: 3em;
 	  }
