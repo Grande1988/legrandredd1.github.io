@@ -211,7 +211,7 @@ form label.top input:required:valid {
     padding: 1em;
     text-align: center;
     font-size: 0.7em;
-    lign-height: 1.7em;
+    line-height: 1.7em;
   }
   #updated {
     color: yellow;
