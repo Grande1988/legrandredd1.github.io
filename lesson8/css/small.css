@@ -133,7 +133,7 @@ picture img {
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid rgba(113, 224, 85);
+    border: 1px solid #3D4058;
     border-radius: 10px;
     padding: .5rem 2%;
 
