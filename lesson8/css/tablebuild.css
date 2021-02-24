@@ -1,71 +1,57 @@
-:root {
-    --odd-row: #e7f0ed;
-    --even-row: #e7ffed;
-    --header: #628ca6;
-    --title: #7fb9c2;
-}
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-    font-family: "Ubuntu", sans-serif;
-    text-align: center;
     font-size: 16px;
-    max-width: 760px;
-    margin: 0 auto;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    color: #564E4E;
 }
 
-body table{
-    margin: 30px auto;
-}
-table, caption{
-    box-shadow: 5px 10px 10px var(--header);
-}
-
-
-caption {
-    font-size: 1.7rem;
-    font-weight: bold;
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;  
     color: black;
-    background-color: var(--title);
-    padding: 0.5rem;
 }
 
-table tr th {
+table {
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 8px 8px 8px #628ca6;
+}
+
+thead, tbody, tfoot, th, tr, td {
+    border: 1px solid #abaa7a;
+    padding: 0 .5em 0 .5em;
+    height: 25px; 
+}
+
+thead th, tfoot td {
+    background-color: #7fb9c2;
+    text-align: center;
+}
+
+tbody tr th {
+    background-color: #628ca6; 
     color: white;
-    background-color: var(--header);
-    font-size: 1.2rem;
+    text-align: center;
 }
 
-table tr {
-    background-color: var(--odd-row);
+tr:nth-child(odd) {
+    background-color: #e7f0ed;
 }
 
 tr:nth-child(even) {
-    background-color: var(--even-row);
+    background-color: #e7ffed;
 }
 
-tr td,
-th {
-    padding: .5rem;
+.goal {
+    background-color:#628ca6; 
+    color: #ffffff; 
 }
-
-table tr td:hover {
-    color: white;
-    background-color: var(--header);
-}
-
-tfoot tr {
-    background-color: var(--title);
-    font-size: 0.8rem;
-}
-
-#blackFriday {
-    font-style: italic;
-}
-
-table,
-td,
-th {
-    border: 2px solid rgb(196, 196, 196);
-    border-collapse: collapse;
+tfoot {
+    font-size: 10px;
+    text-align: center;
 }
