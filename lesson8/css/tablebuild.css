@@ -3,10 +3,9 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-    font-size: 16px;
-    font-family: "Ubuntu", "Arial", sans-serif;
-    color: #564E4E;
-}
+    font-size: 20px;
+    font-family: Ubuntu,  sans-serif;
+ }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -19,7 +18,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 table {
     margin: auto;
     border-collapse: collapse;
-    box-shadow: 8px 8px 8px #628ca6;
+    box-shadow: 8px 8px 10px #628ca6;
 }
 
 thead, tbody, tfoot, th, tr, td {
