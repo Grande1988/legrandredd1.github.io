@@ -1,56 +1,45 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
-
 body {
+    font-family: Ubuntu, sans-serif;
     font-size: 20px;
-    font-family: Ubuntu,  sans-serif;
- }
-
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    max-width: 900px;
-    text-align: center;
-    margin: 0 auto;  
-    color: black;
 }
 
 table {
-    margin: auto;
-    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
     box-shadow: 8px 8px 10px #628ca6;
 }
 
-thead, tbody, tfoot, th, tr, td {
-    border: 1px solid #abaa7a;
-    padding: 0 .5em 0 .5em;
-    height: 25px; 
+table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: .5em;
+    text-align: center;
+
 }
 
-thead th, tfoot td {
+thead tr td, tfoot tr td {
     background-color: #7fb9c2;
-    text-align: center;
+    font-weight: bold;
 }
 
-tbody tr th {
-    background-color: #628ca6; 
+thead tr td {
+    font-size: 1.5em;
+}
+
+tfoot tr td {
+    font-size: .7em;
+}
+
+th, .mark {
+    background-color: #628ca6;
     color: white;
-    text-align: center;
 }
 
-tr:nth-child(odd) {
+tr {
     background-color: #e7f0ed;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #e7ffed;
-}
-
-.goal {
-    background-color:#628ca6; 
-    color: #ffffff; 
-}
-tfoot {
-    font-size: 10px;
-    text-align: center;
 }
