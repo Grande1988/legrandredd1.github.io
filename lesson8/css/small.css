@@ -153,7 +153,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    font-size: px;
+    font-size: 1rem;
 }
 
 form label.top input, 
