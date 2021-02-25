@@ -73,10 +73,11 @@
                 </datalist>
             </label>
 
-            <label class="range">
-                Storm Severity (1 to 10)
-                <span class="rate"> </span>
-                    <input type="range" name="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" class="slider">
+            <label for="rating" class="info">How Severe: &nbsp;&nbsp;&nbsp;
+                <input class="info" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </label>
+
                 <datalist id="tickmarks">
                     <option>1</option>
                     <option>2</option>
@@ -89,7 +90,7 @@
                     <option>9</option>
                     <option>10</option>
                 </datalist>
-            </label>
+           
             <label class="top">Storm Region
                 <select name="region">
                     <option value="Select" selected disabled>Select Region ...</option>
