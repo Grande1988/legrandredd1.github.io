@@ -195,6 +195,17 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+form label.range {
+  display: block;
+  color: #555;
+  padding: .75rem;
+  margin-top: 1rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 20rem;
+}
   .contents {
     display: block;
     margin: 10px auto;
