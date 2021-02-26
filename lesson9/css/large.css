@@ -1,0 +1,87 @@
+@media only screen and (min-width: 60em) {
+      /* ---------- nav ---------- */
+
+  nav ul li a {
+    padding: 8px 16px;
+  }
+
+  nav ul.hide {
+    width: 960px;
+  }
+  
+  nav button {
+      display: none;
+  }
+    main {
+         display: block;
+      }
+      main picture {
+          display: block;
+      }
+      main picture img {
+          width: 100%;
+          border: 1px solid #bbb;
+          border-radius: 9px;
+      }
+   
+  }
+  section {
+    margin-top: 25px;
+    border-radius: 3px;
+    width: 100%;
+}
+html {
+    margin: 0 auto;
+}
+.active {
+    background-color: #48BeFF;
+}
+
+
+.herodiv img {
+    display: block;
+    width: 100%;
+    border: solid 2px black;
+}
+.summary {
+    position: absolute;
+    background-color: #3dfaff;
+    max-width: 25%;
+    top: 40%;
+    left: 15%;
+    padding: 5px;
+    color: black;
+}
+.galleryMain{
+    max-width: 1100px;
+}
+.gallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 25px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.gallery picture:nth-child(3n+1) {
+    grid-column: 1;
+}
+.gallery picture:nth-child(3n+2){
+    grid-column: 2;
+}
+.gallery picture:nth-child(3n+3){
+    grid-column: 3;
+}
+
+.gallery picture{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+.gallery picture p {
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+}
