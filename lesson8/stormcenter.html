@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <section class="sticky"></section>
+    <section class="sticky">
 	<header>
     <section class="heading">
           <h1>One Stop Weather</h1>
@@ -70,7 +70,7 @@
                     <option value="Thunderstorm"></option>
                     <option value="Tornado"></option>
                 </datalist>
-            </label>
+            
 
             <label for="rating" class="info">How Severe: &nbsp;&nbsp;&nbsp;
                 <input class="info" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
