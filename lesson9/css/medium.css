@@ -99,4 +99,12 @@
         grid-column: 2/4;   
     }
     
+	div.card {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		max-width: 800px;
+		margin: auto;
+		/* column-gap: 0.7rem; */
+		row-gap: 1rem;
+	}
 }
