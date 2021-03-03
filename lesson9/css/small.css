@@ -298,6 +298,11 @@ nav ul li a {
     column-gap: 0.7rem;
     row-gap: 1rem;
   }
+
+  div.card section {
+    background-color: #48BeFF;
+    border: 2px solid white;
+  }
   
   /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
     <ul class="navigation responsive">

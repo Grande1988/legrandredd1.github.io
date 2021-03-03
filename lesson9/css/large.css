@@ -92,3 +92,11 @@ div.card {
     max-width: 1000px;
     margin: auto;
 }
+
+div.card {
+    grid-column: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: baseline;
+}

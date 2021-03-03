@@ -107,4 +107,11 @@
 		/* column-gap: 0.7rem; */
 		row-gap: 1rem;
 	}
+
+	div.card section {
+		background-color: #48BeFF;
+		border: 2px solid white;
+		grid-column: 1 / 4;
+		display: flex;
+	}
 }
