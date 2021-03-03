@@ -29,7 +29,7 @@ fetch(requestURL)
       let rainfall = document.createElement('p');
       let img = document.createElement('img')
 
-      img.setAttribute('src', `images/home/${selTowns.photo}`);
+      img.setAttribute('src', `images/${selTowns.photo}`);
       townName.textContent = selTowns.name;
       motto.textContent = selTowns.motto;
       yearFounded.textContent = 'Year Founded: ' + selTowns.yearFounded;
