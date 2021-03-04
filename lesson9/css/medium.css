@@ -109,10 +109,17 @@
 	}
 
 	div.card section {
-		background-color: #48BeFF;
+		padding: 5px;
 		border: 2px solid white;
-		grid-column: 1 / 4;
-		display: flex;
+		background-color: #48BeFF;
+		margin: auto;
+		max-width: 800px;
+		max-height: 300px;
+		margin-bottom: 20px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		
 	}
 	
 }
