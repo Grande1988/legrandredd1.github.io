@@ -93,10 +93,12 @@ div.card {
     margin: auto;
 }
 
-div.card {
+div.card section {
     grid-column: auto;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     align-content: baseline;
 }
+
+
