@@ -88,17 +88,11 @@ html {
 
 div.card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1000px;
-    margin: auto;
+    grid-template-columns: repeat(3, 33%);
+    padding: 20px;
+    gap: 10px;
 }
 
-div.card section {
-    grid-column: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    align-content: baseline;
-}
+
 
 
