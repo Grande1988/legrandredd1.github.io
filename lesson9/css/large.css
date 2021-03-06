@@ -93,6 +93,12 @@ div.card {
     gap: 10px;
 }
 
-
+div.card section {
+    grid-column: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: baseline;
+}
 
 
