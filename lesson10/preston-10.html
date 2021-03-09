@@ -3,147 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Stop Weather</title>
     <link rel="shortcut icon" href="favicon(5).ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <title>One Stop Weather</title>
 </head>
-<body>
-    <header>
-        <img src="images/logo.png" alt="One Stop Weather Logo">
-        <h1>One Stop Weather</h1>
-        <br>
-        <h2>One Stop for all your East Idaho Weather</h2>
-    </header>
-    <nav>
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul class="navigation"> <!--class="navigation responsive"-->
-            <li class="#">
-                <a href="homepage.html">Home</a>
-            </li>
-            <li class="active">
-                <a href="#">Preston</a>
-            </li>
-            <li>
-                <a href="">Soda Springs</a>
-            </li>
-            <li>
-                <a href="">Fish Haven</a>
-            </li>
-            <li>
-                <a href="stormcenter.html">Storm Center</a>
-            </li>
-            <li>
-                <a href="gallery.html">Gallery</a>
-            </li>
-        </ul>
-    </nav>
-    <main class="container">
-        <section>
-        <h3>Preston, Idaho</h3>       
-        </section>
-        <div class="herodiv">
-            <img src="images/pexels-andre-furtado-1162251(2).jpg" alt="thunderstorm">
-            <section>
-                <div class="summary">
-                    <p>Weather Summary</p>
-                    <p>Currently: Sunny</p>
-                    <p>High: 75 °F</p> 
-                    <p>Wind Chill: °F</p>
-                    <p>Humidity: 60%</p>
-                    <p>Wind Speed: 5mph</p>
-                </div>
+<body onload="satbanner(); doInputOutput()">
+    <div id="bannertext" class="notfriday">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</p>
+    </div>
+    <section class="sticky"></section>
+        <header>
+            <picture>
+                <img src="images/logo.png" alt="This image is the logo for One Stop Weather">
+            </picture>
+            <section class="heading">
+                <h1>One Stop Weather</h1>
+                <h2 class="motto">One Stop for all your East Idaho Weather</h2>
             </section>
-        </div>
-        <div class="fiveDaysForcast">
-            <hr>
-            <h2>Five Day Forcast</h2>
-            <section class="fiveDaysContainer">
-                <div>
-                    <h5>Monday</h5>
-                    <img src="images/sunny.png" alt="sunny">
-                    <p>75&#8457;</p>
-                </div>
-                <div>
-                    <h5>Tuesday</h5>
-                    <img src="images/rainy.png" alt="rainy">
-                    <p>60&#8457;</p>
-                </div>
-                <div>
-                 <h5>Wednesday</h5>
-                 <img src="images/rainy.png" alt="rainy">
-                 <p>65&#8457;</p>
-             </div>
-             <div>
-                 <h5>Thursday</h5>
-                 <img src="images/Thunderstorm.png" alt="thunderstorm">
-                 <p>50&#8457;</p>
-             </div>
-             <div>
-                 <h5>Friday</h5>
-                 <img src="images/snowy.png" alt="snowy">
-                 <p>80&#8457;</p>
+        </header>
+
+        <nav class="clearfix">
+            <!-- <button onclick="toggleMenu()">&#9776;</button> -->
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <!-- <li class="ham"><a href="#">Menu</a></li> -->
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3>Preston, Idaho</h3>       
+         
+            <section class="hero">
+                <picture>
+                <source class="small" srcset="images/wdd230_image_franklin500.jpg" media="(max-width: 480px)">
+                <source class="medium" srcset="images/wdd230_image_franklin800.jpg" media="(max-width: 768px)">
+                <source class="large" srcset="images/wdd230_image_franklin1100.jpg" media="(max-width: 1000px)">
+                <img class="heroImage" src="images/wdd230_image_franklinOriginal(2).jpg" alt="Mountain Landscape">
+                </picture>
+                    <div class="weathersummary">
+                        <p>Weather Summary</p>
+                        <p>Currently: Sunny</p>
+                        <p>High: <span id="temp">75</span> °F</p> 
+                        <p>Wind Chill: <span id="windchill"></span></p>
+                        <p>Humidity: <span id="humidity">60</span>%</p>
+                        <p>Wind Speed: <span id="windspeed">10</span>mph</p>
+                        <script src="js/windchill.js"></script>
+                    </div>
+                </section>
             </div>
-             </section>
-             <hr>
-             <section class="article">
-                 <h2>One Stop Weather</h2>
-                     <p>Summis mandamus gloriae arguerent
-                         Tum via primis nullas incursione pulcherrimum fuisset tu naturalem ignavi contra praestabiliorem audaces nemini praeclaram elaborare.</p>
-                     <p>Adiuvet Numquidnam sensibus
-                         Omittendis ut consoletur morbis bonas intus molestia Quoniam Aristippus urbane virtutes dicturum industriae hoc conscientia parta varias paene: Ipsis aegritudine alienum Metrodorus accusator ceteris alios malint probaturum Invitat ergo interdictum iucundum expleantur!</p>
-                     <p>Utens iis invidia
-                         Nulli adquiescere maiores feci laudabilis amotio An iucunde eum dicant sentire Romanum carere cetero Cyrenaicos insipientiam mandaremus monstruosi consumere maledicta poena apud ullam carum horrida honesta M'.que disseretur! Arbitraretur illa pariuntur contemnentes vero delectet excepturi libidinosarum quia consequatur molestias eveniunt Afranius statu Torquatum Sophocles veniamus petulantes tenetur videamus inpotenti vos; Temperantiam cupiditatibus ipsius turbulentaeque salutatus virtutes chorusque iudicium civitatis perpessio intuemur idcirco contemnentes mediocritatem venire Extremum Fieri ordiamur careat verbis laus! Nemore fugienda optime distinguantur conquirendae referatur importari recordamur expectant tenent reprehendunt videor improbe legendi Scaevolam decore fieri.</p>
-             </section>
-        </div>
-             <div class="content-2">
-                <img class="map" src="images/preston.jpg" alt="town map">
-                <h4>
-                    One Stop Weather
-                </h4>
-                <p>
-                    300 N 112 E<br>
-                    Preston, ID 83263
-                </p>
-                <p>
-                    123.456.7890<br>
-                    onestopweather@osw.com
-                </p>
-             </div>
-             <div class="social">
-                <a href="#Facebook"
-                  ><img 
-                    src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fsquare-facebook-512.webp?v=1589237017897" 
-                    alt="Facebook icon" 
-                    height="20" 
-                    width="20"
-                /></a>
-                <a href="#Pinterest"
-                  ><img
-                    src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fpinterest-128.png?v=1589237130336"
-                    alt="Pinterest icon"
-                    height="20"
-                    width="20"
-                /></a>
-                <a href="#Instagram"
-                  ><img
-                    src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Finstagram-icon.png?v=1589237136108"
-                    alt="Instagram icon"
-                    height="20"
-                    width="20"
-                /></a>
-              </div>
-    </main>
-    <footer>
-        <div>
-        <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
-            target="_blank">BYU-I Online Learning</a></p>
-        </div>
-            <p>Last Updated: <span id="lastupdated"></span></p>
-      </footer>
-      <script src="js/currentDate.js"></script>
+            <div class="fiveDaysForcast">
+                <hr>
+                <h2>Five Day Forcast</h2>
+                <section class="fiveDaysContainer">
+                    <div>
+                        <h5>Thursday</h5>
+                        <img src="images/sunny.png" alt="sunny">
+                        <p>75&#8457;</p>
+                    </div>
+                    <div>
+                        <h5>Monday</h5>
+                        <img src="images/rainy.png" alt="rainy">
+                        <p>60&#8457;</p>
+                    </div>
+                    <div>
+                     <h5>Tuesday</h5>
+                     <img src="images/rainy.png" alt="rainy">
+                     <p>65&#8457;</p>
+                 </div>
+                 <div>
+                     <h5>Wednesday</h5>
+                     <img src="images/Thunderstorm.png" alt="thunderstorm">
+                     <p>50&#8457;</p>
+                 </div>
+                 <div>
+                     <h5>Friday</h5>
+                     <img src="images/snowy.png" alt="snowy">
+                     <p>35&#8457;</p>
+                </div>
+                 </section>
+                 <hr>
+                 <section class="article">
+                     <h2>History of Preston, Idaho</h2>
+                   <p>In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, stretching across southeastern Idaho and northeastern Utah. They founded a community in that location and named it Worm Creek, but in 1881 changed it to Preston because leaders of the LDS Church in Salt Lake City objected to the name "Worm Creek" being part of any church congregation's name. The name Preston was suggested by a local member to honor William B. Preston, who at the time was president of the LDS Church's Cache Stake. It was not until the 1880s while William C. Parkinson was serving as the bishop of the Preston LDS Ward that a regular townsite was laid out.
+                       <a href="https://en.wikipedia.org/wiki/Preston,_Idaho">Wikipedia</a>
+                   </p>
+                   <img src="images/sodasprings.jpg" alt="Sodasprings">
+                 </section>
+            </div>
+                 <div class="content-2">
+                    <img class="map" src="images/preston.jpg" alt="town map">
+                    <h4>
+                        One Stop Weather
+                    </h4>
+                    <p>
+                        300 N 112 E<br>
+                        Preston, ID 83263
+                    </p>
+                    <p>
+                        123.456.7890<br>
+                        onestopweather@osw.com
+                    </p>
+                 </div>
+                 <div class="social">
+                    <a href="#Facebook"
+                      ><img 
+                        src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fsquare-facebook-512.webp?v=1589237017897" 
+                        alt="Facebook icon" 
+                        height="20" 
+                        width="20"
+                    /></a>
+                    <a href="#Pinterest"
+                      ><img
+                        src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fpinterest-128.png?v=1589237130336"
+                        alt="Pinterest icon"
+                        height="20"
+                        width="20"
+                    /></a>
+                    <a href="#Instagram"
+                      ><img
+                        src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Finstagram-icon.png?v=1589237136108"
+                        alt="Instagram icon"
+                        height="20"
+                        width="20"
+                    /></a>
+                  </div>
+        </main>
+    
+        <footer>
+            <div>
+            <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
+                target="_blank">BYU-I Online Learning</a></p>
+            </div>
+                <p>Last Updated: <span id="lastupdated"></span></p>
+          </footer>
+          <script src="js/currentDate.js"></script>
+          <script src="js/windchill.js"></script>
+          <script src="js/menu.js"></script>
+    </body>
+        </header>
+    </section>
 </body>
 </html>
