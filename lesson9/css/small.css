@@ -136,8 +136,7 @@ form fieldset {
     border: 1px solid #3D4058;
     border-radius: 10px;
     padding: .5rem 2%;
-
-    max-width: 100;
+    max-width: 100%;
 }
 
 form legend {
