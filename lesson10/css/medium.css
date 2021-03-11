@@ -10,8 +10,11 @@
 		border: 1px solid #bbb;
 		border-radius: 9px;
 	}
-	.fiveDayForcast {
-		display: block;
+	.fivedayforcast {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 	}
 	.fiveDaysContainer{
 		display: grid;
@@ -29,7 +32,7 @@
 
 	.fiveDaysContainer div{
 		text-align: center;
-		border: 1px solid rgba(255, 255, 255, 0.5);
+		border: 1px solid rgba(56, 20, 20, 0.5);
 		border-collapse: collapse;
 		background-color: rgba(255, 255, 255, 0.3);
 		width: 75%;
