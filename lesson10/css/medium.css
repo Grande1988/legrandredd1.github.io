@@ -111,6 +111,33 @@
 		row-gap: 1rem;
 	}
 
-	
+	 /* Week 10 */
+
+	 #weekly-forecast {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		text-align: center;
+		color: #3D405B;
+		gap: 1em;
+		margin: 2em;
+		font-weight: bold;
+	  }
+	  
+	  .forecast {
+		width: 100%;
+	  }
+	  
+	  .forecast h3{
+		color: #3D405B;
+		font-size: 1.5em;
+	  }
+	  .days {
+		padding: 2em;
+		border: 3px solid #3e5b3d;
+		border-radius: 5px;
+		color: #3D405B;
+		font-family: 'Roboto', Helvetica, sans-serif;
+		font-size: 1.2em;
+		} 
 	
 }

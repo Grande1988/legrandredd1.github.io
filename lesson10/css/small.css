@@ -326,3 +326,21 @@ nav ul li a {
     display: table;
     clear: both;
 }
+
+/* Week 10 */
+
+#weekly-forecast {
+  display: none;
+} 
+
+.forecast h3 {
+  display: none;
+}
+
+#day1, #day2, #day3, #day4, #day5 {
+  color:#3D405B;
+ }
+
+ #temp1, #temp2, #temp3, #temp4, #temp5 {
+  color:#3D405B;
+}
