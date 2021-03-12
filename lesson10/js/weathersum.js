@@ -1,6 +1,6 @@
 /************** CURRENT WEATHER DATA *******************/
 //ADD the key and change units to imperial
-const apiKey = "76906579f4efc58a128720f93bf9efd1";
+const apiKey = "07d69392c2d3f3ab2bad848587618771";
 const prestonID = "5604473";
 const sodaID = "5607916"; 
 const fishID = "5585010";
