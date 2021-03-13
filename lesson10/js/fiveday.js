@@ -1,26 +1,9 @@
-const mydate = new Date();
-const y = mydate.getDay();
-let forcastdaynumber = y;
+const api = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=36089ae9649ea39369703e6946f36ac3";
 
-
-
-const myweekday = new Array(7);
-myweekday[0] = 'Sunday';
-myweekday[1] = 'Monday';
-myweekday[2] = 'Tuesday';
-myweekday[3] = 'Wednesday';
-myweekday[4] = 'Thursday';
-myweekday[5] = 'Friday';
-myweekday[6] = 'Saturday';
-
-
-
-const api = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=07d69392c2d3f3ab2bad848587618771&units=imperial";
-
-  fetch(api)
+  fetch(apiURL_forecast)
   .then((response) => response.json())
   .then((weatherobj) => {
-     console.log(weatherobj);
+     console.log(jsObject);
 
      let mylist = weatherobj.list;
      
