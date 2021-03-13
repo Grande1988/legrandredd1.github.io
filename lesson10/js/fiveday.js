@@ -1,8 +1,9 @@
 const mydate = new Date();
-const y = mydate.getDay();
-let forcastdaynumber = y;
 
+const today = Currentday.getDay();
 
+let forecastDayNumber = today;
+console.log(forecastDayNumber);
 
 const myweekday = new Array(7);
 myweekday[0] = 'Sunday';
