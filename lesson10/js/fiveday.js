@@ -39,7 +39,7 @@ const api = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=i
             forecastdiv.appendChild(iconimg);
             forecastdiv.appendChild(fivetemp);
 
-            document.querySelector('section.fivedayforecast').appendChild(forecastdiv);
+            document.querySelector('section.forecast').appendChild(forecastdiv);
 
         }
         
