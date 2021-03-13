@@ -59,8 +59,8 @@ body {
 .gallery{
     display: grid;
     grid-template-columns: 1fr;
-    /* margin: 0 1vw; */
-    /* max-width: 100%; */
+    margin: 0 1vw; 
+    max-width: 100%; 
 }
 .gallery picture{
     width: 100%;
@@ -343,4 +343,11 @@ nav ul li a {
 
  #temp1, #temp2, #temp3, #temp4, #temp5 {
   color:#3D405B;
+}
+
+.place {
+  display: block;
+  border: 2px solid #023c19;
+  padding: 20px;
+  margin: 10px;
 }
