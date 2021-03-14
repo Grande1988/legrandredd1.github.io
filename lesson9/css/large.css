@@ -88,8 +88,7 @@ html {
 
 div.card {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
