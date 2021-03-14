@@ -1,0 +1,352 @@
+body {
+    font-family: "Quicksand", sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  header, main, footer {
+    max-width: 100%;
+    margin: .5em .5em .5em .5em;
+  }
+  main {
+    display: block;
+    justify-content: center;
+  }
+  main picture {
+    display: block;
+  }
+  main picture img {
+    width: 100%;
+    border: 2px solid black;
+    display: block;
+  }
+  .logo-box {
+    height: 11em;
+    width: 11em;
+    }
+    #bannertext.notfriday {
+      display: none;
+    }
+    #bannertext {
+      display: block;
+      background-color: #48BEFF;
+      color: beige;
+      font-family: 'Averia Libre', cursive;
+      font-size: 1em;
+      width: 100%;
+      padding: .5em;
+      text-align: center;
+    }
+  header, footer {
+    background-color:  #48BEFF;
+    color: #14453D;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+    border-radius: 9px;
+  }
+  header img {
+    background-color: #48BEFF;
+    border-radius: .3em;
+  }
+  .galleryTitle{
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1vw; 
+    max-width: 100%; 
+}
+.gallery picture{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.gallery picture img{
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.gallery picture p{
+    display: none;
+}
+.gallery picture:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+  .item-foot {
+    margin: .5em;
+    padding:.5em;
+    color: white;
+  }
+  .item-head {
+    padding: .5em;
+    height: auto;
+    text-align: center;
+    background: black;
+    color: beige;
+    border-radius: 9px;
+  }
+  a {	color: white; }
+  a:visited {color: purple;}
+  a:hover {color: blue;}
+  h1 {
+    font-size: 2rem;
+    font-family: "Quicksand",  sans-serif;
+  }
+  main article {
+    margin: .5em;
+    border: 1px solid #bbb;
+    padding: .25em;
+    background-color:  #047526;
+    color: black;
+    border-radius: 9px;
+    justify-content: center;
+    text-align: center;
+  }
+  main picture img {
+      width: 100%;
+      border: 1px solid #bbb;
+  }
+  main picture {
+    display: block;
+    margin: .5rem auto;
+    padding: 1em;
+  }
+  form {
+    max-width: 100%;
+
+}
+
+form fieldset {
+    margin: 2rem;
+    border: 1px solid #3D4058;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width: 100%;
+}
+
+form legend {
+    color: black;
+    margin: 0 1rem;
+    font-family: 'Pathway-Gothic One', sans-serif;
+    font-size: 20px;
+
+
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+form label.top input, 
+form label.top select {
+    -webkit-apperance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgb(255, 255, 255);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitButn {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    max-width: 100%;
+}
+
+
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+form label.range {
+  display: block;
+  color: #555;
+  padding: .75rem;
+  margin-top: 1rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 20rem;
+}
+  .contents {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #3D4058;
+    padding: 15px;
+    background-color: #48BEFF;
+    color: #3D4058;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  footer {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.7em;
+    line-height: 1.7em;
+  }
+  #updated {
+    color: yellow;
+  font-size: .7em;
+  }
+  
+  nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+}
+nav {
+    background-color:  #3dfaff;
+    font-family: verdana, sans-serif;
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.hide {
+    display: none;
+}
+.ham {
+    position: relative;
+    top: 12px;
+    right: 0;
+    margin: 0;
+    font-size: 30px;
+    float: right;
+    background-color: #ddefff;
+    border: none;
+    color: #3dfaff;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+
+.weathersummary {
+  position: absolute;
+  top: 1rem;
+  margin-left: 3rem;
+  background-color: rgba(142, 175, 157, 0.7);
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgb(246 100 25 / 50%);
+  border: 2px solid black;
+  font-size: 10px;
+}
+
+  .hero{
+    position: relative;
+  }
+  .heroImage{
+    display: block;
+    width: 100%;
+    border: solid 2px black;
+  }
+ 
+  div.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: auto;
+    column-gap: 0.7rem;
+    row-gap: 1rem;
+  }
+
+  div.card section {
+    background-color: #48BeFF;
+    border: 2px solid white;
+  }
+
+  div.card section div h2, h4, p{
+      text-align: center;
+  }
+  
+  /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+    <ul class="navigation responsive">
+  */
+  .responsive li {
+    display: block;
+  }
+
+  ul li {
+    display: inline;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Week 10 */
+
+#weekly-forecast {
+  display: none;
+} 
+
+.forecast h3 {
+  display: none;
+}
+
+#day1, #day2, #day3, #day4, #day5 {
+  color:#3D405B;
+ }
+
+ #temp1, #temp2, #temp3, #temp4, #temp5 {
+  color:#3D405B;
+}
+
+.place {
+  display: block;
+  border: 2px solid #023c19;
+  padding: 20px;
+  margin: 10px;
+}

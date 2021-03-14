@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Stop Weather</title>
+    <link rel="shortcut icon" href="favicon(5).ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="One Stop Weather Logo">
+        <h1>One Stop Weather</h1>
+        <br>
+        <h2>One Stop for all your East Idaho Weather</h2>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul class="primaryNav" class="hide"> <!--class="navigation responsive"-->
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="preston-10.html">Preston</a>
+            </li>
+            <li>
+                <a href="">Soda Springs</a>
+            </li>
+            <li>
+                <a href="">Fish Haven</a>
+            </li>
+            <li>
+                <a href="stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="card"></div>
+        <section>
+        <h3>Preston, Idaho</h3>       
+        </section>
+
+             <div class="content-2">
+                <img class="map" src="images/preston.jpg" alt="town map">
+                <h4>
+                    One Stop Weather
+                </h4>
+                <p>
+                    300 N 112 E<br>
+                    Preston, ID 83263
+                </p>
+                <p>
+                    123.456.7890<br>
+                    onestopweather@osw.com
+                </p>
+             </div>
+             <div class="social">
+                <a href="#Facebook"
+                  ><img src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fsquare-facebook-512.webp?v=1589237017897" 
+                    alt="Facebook icon" 
+                    height="20" 
+                    width="20"
+                /></a>
+                <a href="#Pinterest"
+                  ><img src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fpinterest-128.png?v=1589237130336"
+                    alt="Pinterest icon"
+                    height="20"
+                    width="20"
+                /></a>
+                <a href="#Instagram"
+                  ><img src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Finstagram-icon.png?v=1589237136108"
+                    alt="Instagram icon"
+                    height="20"
+                    width="20"
+                /></a>
+              </div>
+    </main>
+    <footer>
+        <div>
+        <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
+            target="_blank">BYU-I Online Learning</a></p>
+        </div>
+            <p>Last Updated: <span id="lastupdated"></span></p>
+      </footer>
+      <script src="js/currentDate.js"></script>
+      <script src="js/homepageData.js"></script>
+      <script src="js/saturday.js"></script>
+      <script src="js/windchill.js"></script>
+ </body>
+</html>

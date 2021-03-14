@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon(5).ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>One Stop Weather</title>
+</head>
+<body onload="satbanner(); doInputOutput()">
+    <div id="bannertext" class="notfriday">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</p>
+    </div>
+    <section class="sticky"></section>
+        <header>
+            <picture>
+                <img src="images/logo.png" alt="This image is the logo for One Stop Weather">
+            </picture>
+            <section class="heading">
+                <h1>One Stop Weather</h1>
+                <h2 class="motto">One Stop for all your East Idaho Weather</h2>
+            </section>
+        </header>
+
+        <nav class="clearfix">
+            <!-- <button onclick="toggleMenu()">&#9776;</button> -->
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <!-- <li class="ham"><a href="#">Menu</a></li> -->
+                <li><a href="homepage.html">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3>Preston, Idaho</h3>       
+         
+            <section class="hero">
+                <picture>
+                <source class="small" srcset="images/wdd230_image_franklin500.jpg" media="(max-width: 480px)">
+                <source class="medium" srcset="images/wdd230_image_franklin800.jpg" media="(max-width: 768px)">
+                <source class="large" srcset="images/wdd230_image_franklin1100.jpg" media="(max-width: 1000px)">
+                <img class="heroImage" src="images/wdd230_image_franklinOriginal(2).jpg" alt="Mountain Landscape">
+                </picture>
+                    <div class="weathersummary">
+                        <h3>Weather Summary</h3>
+                        <p>Weather Conditions for <span id="place">city</span></p>
+                        <p>Currently: <span id="currentTemp">00</span> &deg;</p> 
+                        <p>Temp.: <span id="ht">&#8457;</span>
+                        <p>Wind Chill: <span id="windchill"></span>%</p>
+                        <p>Humidity: <span id="hum"></span>%</p>
+                        <p>Wind Speed: <span id="windspeed">xx</span>MPH</p>
+                        
+                    </div>
+            </section>
+            
+            <h3 class="fd">5 Day Forecast</h3>
+                
+				<section class="fivedayforecast">
+                    <div id="theDay"></div>
+                </section>
+          
+        
+                 <hr>
+                 <section class="article">
+                     <h2>History of Preston, Idaho</h2>
+                   <p>In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, stretching across southeastern Idaho and northeastern Utah. They founded a community in that location and named it Worm Creek, but in 1881 changed it to Preston because leaders of the LDS Church in Salt Lake City objected to the name "Worm Creek" being part of any church congregation's name. The name Preston was suggested by a local member to honor William B. Preston, who at the time was president of the LDS Church's Cache Stake. It was not until the 1880s while William C. Parkinson was serving as the bishop of the Preston LDS Ward that a regular townsite was laid out.
+                       <a href="https://en.wikipedia.org/wiki/Preston,_Idaho">Wikipedia</a>
+                   </p>
+                   <img src="images/sodasprings.jpg" alt="Sodasprings">
+                 </section>
+            
+     
+        </main>
+    
+        <footer>
+            <div class="content-2">
+                <h4>
+                    One Stop Weather
+                </h4>
+                <p>
+                    300 N 112 E<br>
+                    Preston, ID 83263
+                </p>
+                <p>
+                    123.456.7890<br>
+                    onestopweather@osw.com
+                </p>
+                <img class="map" src="images/preston1.jpg" alt="town map">
+             </div>
+             <div class="social">
+                <a href="#Facebook"
+                  ><img 
+                    src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fsquare-facebook-512.webp?v=1589237017897" 
+                    alt="Facebook icon" 
+                    height="20" 
+                    width="20"
+                /></a>
+                <a href="#Pinterest"
+                  ><img
+                    src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fpinterest-128.png?v=1589237130336"
+                    alt="Pinterest icon"
+                    height="20"
+                    width="20"
+                /></a>
+                <a href="#Instagram"
+                  ><img
+                    src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Finstagram-icon.png?v=1589237136108"
+                    alt="Instagram icon"
+                    height="20"
+                    width="20"
+                /></a>
+              </div>
+            <div>
+            <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
+                target="_blank">BYU-I Online Learning</a></p>
+            </div>
+                <p>Last Updated: <span id="lastupdated"></span></p>
+          </footer>
+          <script src="js/currentDate.js"></script>
+          <script src="js/weathersum.js"></script>
+          <script src="js/fiveday.js"></script>
+          <script src="js/windchill.js"></script>
+          <script src="js/menu.js"></script>
+    </body>
+</html>
