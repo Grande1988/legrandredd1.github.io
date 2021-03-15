@@ -307,6 +307,9 @@ nav ul li a {
       text-align: center;
   }
   
+  section {
+    display: none;
+  }
   /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
     <ul class="navigation responsive">
   */
