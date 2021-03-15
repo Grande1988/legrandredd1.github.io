@@ -139,14 +139,5 @@
 		font-family: 'Roboto', Helvetica, sans-serif;
 		font-size: 1.2em;
 		} 
-	section {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		grid-gap: 1.25%;
-		padding: 0.313rem;
-		width: 80%;
-		margin: 0 auto;
-		text-align: center;
-	}
 	
 }
