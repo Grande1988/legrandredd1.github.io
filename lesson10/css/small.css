@@ -350,3 +350,9 @@ nav ul li a {
   padding: 20px;
   margin: 10px;
 }
+
+#wireframes {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
