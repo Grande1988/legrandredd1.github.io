@@ -101,7 +101,4 @@ div.card section {
     align-content: baseline;
 }
 
-#fivedayforecast {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
 

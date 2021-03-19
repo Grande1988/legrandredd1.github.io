@@ -10,7 +10,7 @@
 		border: 1px solid #bbb;
 		border-radius: 9px;
 	}
-	#fivedayforecast {
+	.fivedayforcast {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
