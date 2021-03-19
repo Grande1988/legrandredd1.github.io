@@ -10,11 +10,8 @@
 		border: 1px solid #bbb;
 		border-radius: 9px;
 	}
-	.fivedayforcast {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
+	#fivedayforecast {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 	.fiveDaysContainer{
 		display: grid;

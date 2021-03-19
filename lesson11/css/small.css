@@ -327,6 +327,11 @@ nav ul li a {
 }
 
 /* Week 10 */
+#fivedayforecast{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
 
 #weekly-forecast {
   display: none;
