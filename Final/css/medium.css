@@ -139,5 +139,9 @@
 		font-family: 'Roboto', Helvetica, sans-serif;
 		font-size: 1.2em;
 		} 
+	  .headContainer img {
+		  margin: -20px;
+		  width: 100px;
+	  }
 	
 }
