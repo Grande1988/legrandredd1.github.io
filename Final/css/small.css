@@ -40,8 +40,8 @@ body {
       text-align: center;
     }
   header, footer {
-    background-color:  #48BEFF;
-    color: #14453D;
+    background-color:  #429EA6;
+    color: #ECEBE4;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -101,8 +101,8 @@ picture img {
     border-radius: 9px;
   }
   a {	color: white; }
-  a:visited {color: purple;}
-  a:hover {color: blue;}
+  a:visited {color: #153850;}
+  a:hover {color: #CC998D;}
   h1 {
     font-size: 2rem;
     font-family: "Quicksand",  sans-serif;

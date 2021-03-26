@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blanding Chamber of Commerce</title>
+    <link rel="shortcut icon" href="favicon(1).ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    
+    <header class="headerContainer">
+        <picture>
+            <img src="images/blandinglogo.jpg" alt="This image is the logo for Blanding Chamber of Commerce">
+        </picture>
+        <section class="heading">
+            <h1>Blanding Chamber of Commerce</h1>
+            <h2 class="motto">One Stop for all your Blanding Information</h2>
+        </section>
+    </header>
+    <nav class="navbar">
+        <button class="hamburger" id="hamburger">
+            <i>&#x2630; Menu</i>
+        </button>
+        <ul class="navigation" id="nav-ul">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="citydescription.html">City</a></li>
+            <li><a href="jointhechamber.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contactpage.html">Contact</a></li>
+        </ul>
+    </nav>
+    <p><h2>Purpose:</h2>
+        <h5>The purpose of this site is to help you be aware of everything you can do in Blanding, Utah and all it has to offer!</h5>
+    </p>
+          <footer>
+            <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
+                target="_blank">BYU-I Online Learning</a></p>
+
+                <p>Last Updated: <span id="lastupdated"></span></p>
+          </footer>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src="js/currentDate.js"></script>
+          <script src="js/weathersum.js"></script>
+          <script src="js/responsiveMenu.js"></script>
+          <script src="js/windchill.js"></script>
+          <script src="js/message.js"></script>
 </body>
 </html>
