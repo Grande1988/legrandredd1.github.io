@@ -13,30 +13,30 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <header class="headerContainer">
+    <header>
         <picture>
             <img src="images/blandinglogo.jpg" alt="This image is the logo for Blanding Chamber of Commerce">
         </picture>
         <section class="heading">
             <h1>Blanding Chamber of Commerce</h1>
-            <h2 class="motto">One Stop for all your Blanding Information</h2>
+            <h2>One Stop for all your Blanding Information</h2>
         </section>
     </header>
-    <nav class="navbar">
-        <button class="hamburger" id="hamburger">
-            <i>&#x2630; Menu</i>
-        </button>
-        <ul class="navigation" id="nav-ul">
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="home.html">Home</a></li>
-            <li class="active"><a href="citydescription.html">City</a></li>
+            <li class="active"><a href="#">City</a></li>
             <li><a href="jointhechamber.html">Join</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="contactpage.html">Contact</a></li>
         </ul>
     </nav>
-    <p><h2>Purpose:</h2>
-        <h5>The purpose of this site is to help you be aware of everything you can do in Blanding, Utah and all it has to offer!</h5>
-    </p>
+    <main>
+    <h2>History:</h2>
+        <p>First known as Grayson (after Nellie Grayson Lyman, wife of settler Joseph Lyman), the town changed its name in 1914 when a wealthy easterner, Thomas W. Bicknell, offered a thousand-volume library to any town that would adopt his name. Grayson competed with Thurber, Utah (renamed Bicknell) for the prize. Grayson was renamed Blanding after the maiden name of Bicknell's wife, and each of the towns received 500 books.
+            <a href="https://en.wikipedia.org/wiki/Blanding,_Utah">Wikipedia</a>
+        </p>
           <footer>
             <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
                 target="_blank">BYU-I Online Learning</a></p>
@@ -49,5 +49,6 @@
           <script src="js/responsiveMenu.js"></script>
           <script src="js/windchill.js"></script>
           <script src="js/message.js"></script>
+    </main>
 </body>
 </html>

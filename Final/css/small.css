@@ -100,9 +100,9 @@ picture img {
     color: beige;
     border-radius: 9px;
   }
-  a {	color: white; }
-  a:visited {color: #153850;}
-  a:hover {color: #CC998D;}
+  a {	color: #153850; }
+  a:visited {color: #CC998D;}
+  a:hover {color: beige;}
   h1 {
     font-size: 2rem;
     font-family: 'Open Sans',  sans-serif;
