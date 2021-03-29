@@ -41,7 +41,7 @@ body {
     }
   header, footer {
     background-color:  #429EA6;
-    color: #ECEBE4;
+    color: #CC998D;
     display: flex;
     flex-flow: column;
     align-items: center;
