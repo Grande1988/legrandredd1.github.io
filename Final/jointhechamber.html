@@ -32,8 +32,78 @@
             <li><a href="contactpage.html">Contact</a></li>
         </ul>
     </nav>
-    <p><h2>Purpose:</h2>
-        <h5>The purpose of this site is to help you be aware of everything you can do in Blanding, Utah and all it has to offer!</h5>
+    <p><h2>Come join the Blanding Chamber of Commerce!</h2>
+        <main>
+            <form action="thanks.html">
+                <fieldset>   
+                    <legend>Personal Information</legend>
+                    <label class="top">Full Name <input type="text" name="fullName" placeholder="Full Name" required></label>
+                    <label class="top">Email<input type="email" name="email"  placeholder="something@gmail.com"></label>
+                    <label class="top">Phone Number <input type="tel" name="phone" placeholder="123-456-7890" required></label>
+                    <label class="top">Zip Code<input type="number" name="zipcode" placeholder="12345" required></label>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date<input type="date" name="date"></label>
+                    <label class="top">Storm Type<input list="storms" name="storms"></label>
+                        <datalist id="storms">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    
+        
+                    <label for="rating" class="info">How Severe: &nbsp;&nbsp;&nbsp;
+                        <input class="info" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+        
+                        <datalist id="tickmarks">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </datalist>
+                   
+                    <label class="top">Storm Region
+                        <select name="region">
+                            <option value="Select" selected disabled>Select Region ...</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+        
+                    <div>User in-danger</div>
+                    <label class="side">
+                        <input type="radio" name="in-danger" value="yes"> Yes
+                    </label>
+                    <label class="side">
+                        <input type="radio" name="in-danger" value="maybe">Maybe
+                    </label>
+                    <label class="side">
+                        <input type="radio" name="in-danger" value="no"> No 
+                    </label>
+                </fieldset>
+        
+                <fieldset>
+                <legend>Additional Information or Comments</legend>
+                <textarea name="comments" rows="5" cols="33" placeholder="Enter comments here..."></textarea>
+              </fieldset>
+        
+                <input type="submit" value="Send Report" class="submitbutton" data-nlok-ref-guid="8ce6a0fc-0ee5-471e-86d2-8c0a4b707e18">
+            </form>
+        
+        </main>
     </p>
           <footer>
             <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
