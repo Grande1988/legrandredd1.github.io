@@ -15,7 +15,7 @@ if (city == "Preston"){
       cityId = fishID;
     }
 
-const apiURL = `//api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${apiKey}&units=imperial`;
+const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=37.6242&lon=-109.4782&exclude=hourly,daily&appid={07d69392c2d3f3ab2bad848587618771};'
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)

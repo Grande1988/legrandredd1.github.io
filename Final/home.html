@@ -35,15 +35,50 @@
     <section class="hero">
     <picture>
         <img  class="heroImage" src="images/Blanding-sign.jpg" alt="Blanding Billboard">
-
     </picture>
+    <div class="weathersummary">
+        <h3>Weather Summary</h3>
+        <p>Currently: <span id="currentTemp">00</span> &deg;</p> 
+        <p>Temp.: <span id="ht">&#8457;</span>
+        <p>Wind Chill: <span id="windchill"></span>%</p>
+        <p>Humidity: <span id="hum"></span>%</p>
+        <p>Wind Speed: <span id="windspeed">xx</span>MPH</p>
+    </div>
     </section>
     <h2>Purpose:</h2>
     <p>The Blanding Utah Chamber of Commerce, located in Blanding, UT, is an organization of local businesses that promotes economic development 
        and business activity in Blanding. The Chamber of Commerce encourages a positive business climate by working with investors, attracting
        visitors, and creating a strong community. As an important representative for the Blanding business and employer community, 
        the Chamber of Commerce can also influence San Juan County public policy.</p>
+    <h3 class="fd">5 Day Forecast</h3>
+    <section class="fivedayforecast">
+        <div id="theDay"></div>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25282.299132652333!2d-109.49801203933332!3d37.61892710643074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873778b85120df81%3A0x6243e12ff6100d99!2sBlanding%2C%20UT%2084511!5e0!3m2!1sen!2sus!4v1617815603535!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           <footer>
+            <div class="social">
+                <a href="#Facebook"
+                  ><img 
+                    src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fsquare-facebook-512.webp?v=1589237017897" 
+                    alt="Facebook icon" 
+                    height="20" 
+                    width="20"
+                /></a>
+                <a href="#Pinterest"
+                  ><img
+                    src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Fpinterest-128.png?v=1589237130336"
+                    alt="Pinterest icon"
+                    height="20"
+                    width="20"
+                /></a>
+                <a href="#Instagram"
+                  ><img
+                    src="https://cdn.glitch.com/0dc956a8-2122-45a2-b396-ea5d68d50f72%2Finstagram-icon.png?v=1589237136108"
+                    alt="Instagram icon"
+                    height="20"
+                    width="20"
+                /></a>
+              </div>
             <p>&copy; <span id="currentyear"></span> | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
                 target="_blank">BYU-I Online Learning</a></p>
 
