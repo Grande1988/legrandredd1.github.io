@@ -279,7 +279,16 @@ nav ul li a {
   border: 2px solid black;
   font-size: 10px;
 }
-
+section button {
+  grid-column: 3;
+  margin-left: 1rem;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 1.6rem;
+  color: black;
+  margin: 0 5vw;
+}
   .hero{
     position: relative;
   }

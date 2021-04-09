@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blanding Chamber of Commerce</title>
+    <title>Join The Chamber</title>
     <link rel="shortcut icon" href="favicon(1).ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -32,7 +32,7 @@
             <li><a href="contactpage.html">Contact</a></li>
         </ul>
     </nav>
-    <p><h2>Come join the Blanding Chamber of Commerce!</h2>
+    <h2>Come join the Blanding Chamber of Commerce!</h2>
         <main>
             <form action="thanks.html">
                 <fieldset>   
@@ -40,64 +40,31 @@
                     <label class="top">First Name <input type="text" name="firstName" placeholder="First Name" required></label>
                     <label class="top">Last Name <input type="text" name="lastName" placeholder="Last Name" required></label>
                     <label class="top">Title<input type="text" name="title" placeholder="Title"></label>
-                    <label class="top">Email<input type="email" name="email"  placeholder="something@gmail.com"required></label>
+                    <label class="top">Email<input type="email" name="email"  placeholder="something@gmail.com" required></label>
                     <label class="top">Cell Phone Number<input type="tel" name="phone" placeholder="123-456-7890" required></label>
                     <label class="top">Business Name<input type="text" name="Business" placeholder="Business Name" required></label>
                     <label class="top">Business Address<input type="Text" name="Business" placeholder="Business Address"></label>
                     <label class="top">Zip Code<input type="number" name="zipcode" placeholder="12345" required></label>
+                    <label class="top">Business Website<input type="url" name="Website" placeholder="www.something.com"></label>
+                    <legend>Business Description</legend>
+                    <textarea name="description" rows="5" cols="35" placeholder="Enter Business Description Here..."></textarea>
                 </fieldset>
-        
-                <fieldset>
-                    <legend>Storm Information</legend>
-                    <label class="top">Storm Date<input type="date" name="date"></label>
-                    <label class="top">Storm Type<input list="storms" name="storms"></label>
-                        <datalist id="storms">
-                            <option value="Flash Flood"></option>
-                            <option value="Hail"></option>
-                            <option value="Hurricane"></option>
-                            <option value="Thunderstorm"></option>
-                            <option value="Tornado"></option>
-                        </datalist>
-                    
-        
-                    <label for="rating" class="info">How Severe: &nbsp;&nbsp;&nbsp;
-                        <input class="info" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
-                    </label>
-        
-                        <datalist id="tickmarks">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                        </datalist>
-                   
-                    <label class="top">Storm Region
-                        <select name="region">
-                            <option value="Select" selected disabled>Select Region ...</option>
-                            <option value="Soda Springs">Soda Springs</option>
-                            <option value="Preston">Preston</option>
-                            <option value="Fish Haven">Fish Haven</option>
-                        </select>
-                    </label>
-        
-                    <div>User in-danger</div>
+           
+            
+                                     
+                    <div>Membership Levels</div>
                     <label class="side">
-                        <input type="radio" name="in-danger" value="yes"> Yes
+                        <input type="radio" name="Non-profit" value="non-profit"> Non-profit($100)
                     </label>
                     <label class="side">
-                        <input type="radio" name="in-danger" value="maybe">Maybe
+                        <input type="radio" name="Bronze" value="Bronze">Bronze ($200)
                     </label>
                     <label class="side">
-                        <input type="radio" name="in-danger" value="no"> No 
+                        <input type="radio" name="Silver" value="Silver">Silver ($400) 
                     </label>
-                </fieldset>
+                    <label class="side">
+                        <input type="radio" name="Gold" value="Gold">Silver Gold ($1000)
+                    </label>
         
                 <fieldset>
                 <legend>Additional Information or Comments</legend>
@@ -108,7 +75,7 @@
             </form>
         
         </main>
-    </p>
+ 
           <footer>
             <div class="social">
                 <a href="#Facebook"
